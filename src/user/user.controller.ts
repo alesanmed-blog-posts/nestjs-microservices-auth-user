@@ -2,7 +2,7 @@ import { Controller, UseGuards, Get } from '@nestjs/common';
 import { UserService } from './user.service';
 import { MessagePattern } from '@nestjs/microservices';
 import { User } from './user.entity';
-import { AuthGuard } from 'src/guards/AuthGuard';
+import { AuthGuard } from '../guards/AuthGuard';
 
 @Controller()
 export class UserController {
